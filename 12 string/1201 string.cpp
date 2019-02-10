@@ -12,6 +12,9 @@ string은 문자를 원소로 취급하는 배열 기반 시퀸스 컨테이너이며 vector와 비슷하다.
 
 string.begin()은 첫 문자, string.end()는 마지막 문자 다음을 가리킨다.
 
+reserve()로 메모리 공간을 예약하고 사용가능.
+capacity()로 메모리 공간 확인.
+
 string은 basic_string<char>의 typedef
 wstring은 basic_string<wchar_t>의 typedef
 
