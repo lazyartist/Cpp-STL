@@ -2,7 +2,9 @@
 #include <vector>
 #include <list>
 #include <stack>
+#include <set>
 #include <algorithm> // find 사용
+#include <functional> // not 사용
 #include "utils.h"
 
 using namespace std;
@@ -124,6 +126,12 @@ STL의 특징
 		반복자 어댑터(iterator adaptor) : reverse_iterator, back_insert_iterator, front_insert_iterator, insert_iterator
 		함수 어댑터(function adaptor) : 바인더(binder), 부정자(negator), 함수 포인터 어댑터(adaptor for pointers to functions)
 
+할당기
+	컨테이너의 메모리 할당 정보와 정책(메모리 할당 모델)을 캡슐화한 STL 구성 요소
+	할당기는 템플릿 클래스이며 모든 컨테이너는 기본 할당기를 사용
+	사용자가 직접 정의하고 사용할 수 있음.
+		특정 구현 환경에 최적화된 메모리 할당 몸델을 구축할 수 있음
+		대부분 STL의 기본 할당기만으로 충분하므로 자세히 다루지 않음.
 
 */
 
@@ -250,6 +258,8 @@ int main() {
 
 				내부 컨테이너로 deque과 vector의 차이
 					stack은 인터페이스를 변환해주는 껍데기일 뿐이라서 deque과 vector의 성능 차이가 차이점이다.
+
+				vector를 stack처럼 사용할 수 있지만 stack을 사용하면 코드의 의도를 명확하게 할 수 있다.
 			*/
 			stack<int> deque_stack; // deque를 컨테이너로 사용
 			deque_stack.push(0);
@@ -267,7 +277,7 @@ int main() {
 
 			cout << "---" << endl;
 
-			stack<int, vector<int>> vector_stack; // stack을 컨테이너로 사용
+			stack<int, vector<int>> vector_stack; // vector를 컨테이너로 사용
 			vector_stack.push(10);
 			vector_stack.push(11);
 			vector_stack.push(12);
@@ -280,7 +290,6 @@ int main() {
 			vector_stack.pop();
 
 			cout << vector_stack.empty() << endl; // 1 : true
-
 		}
 
 		cout << "--- reverse_iterator" << endl;
@@ -288,17 +297,67 @@ int main() {
 			/*
 			reverse_iterator 반복자 어댑터
 				일반 반복자의 동작 방식을 반대로 동작시키는 역방향 반복자(reverse iterator)로 변환
+				역방향 반복자의 실제 값은 현재 요소 값이 아닌 다음 요소의 값이다.
+					이로인해 반복자 순회시 ++ 연산만 사용해도 되는 편리함이 있다.
 			*/
+			vector<int> v;
+			v.push_back(1);
+			v.push_back(2);
+			v.push_back(3);
+			printContainer<vector<int>, vector<int>::iterator>(v);
+			cout << "---" << endl;
+
+			/*
+			정방향 Iterator를 역방향 iterator로 변경
+			*/
+			{
+				vector<int>::reverse_iterator riterBegin(v.end());
+				vector<int>::reverse_iterator riterEnd(v.begin());
+				while (riterBegin != riterEnd)
+				{
+					cout << *(riterBegin++) << endl;
+				}
+			}
+			cout << "---" << endl;
+
+			/*
+			컨테이너에서 역방향 반복자 얻기
+			*/
+			{
+				vector<int>::reverse_iterator riterBegin = v.rbegin();
+				vector<int>::reverse_iterator riterEnd = v.rend();
+				while (riterBegin != riterEnd)
+				{
+					cout << *(riterBegin++) << endl;
+				}
+			}
 		}
 
-		cout << "--- not2" << endl;
+		cout << "--- not1, not2" << endl;
 		{
 			/*
-			not2 함수 어댑터
-				조건자 함수 객체를 NOT(반대)로 변환
+			not1, not2 함수 어댑터
+				조건자 함수 객체를 반대 의미(NOT(반대))의 조건자 함수 객체로 변경
+				not1 : 단항 조건자
+				not2 : 이항 조건자
 			*/
+			cout << less<int>()(1, 0) << endl; // 0 : 1이 1보다 작지 않다.
+			cout << less<int>()(1, 1) << endl; // 0 : 1이 1보다 작지 않다.
+			cout << less<int>()(1, 2) << endl; // 1 : 1이 2보다 작다.
+			cout << not2(less<int>())(1, 0) << endl; // 1
+			cout << not2(less<int>())(1, 1) << endl; // 1
+			cout << not2(less<int>())(1, 2) << endl; // 0
 		}
 
+	}
+
+	cout << "===== 할당기 =====" << endl;
+	{
+		/*
+		vector, set의 기본 할당기 명시적 지정
+		*/
+		vector<int, allocator<int>> v;
+		set<int, less<int>/*정렬기준*/, allocator<int>> s;
 	}
 
 	return 0;
