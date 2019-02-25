@@ -10,13 +10,8 @@
     <summary>
 	정답
 	</summary>
-    1. ㅁ
-        1. 컨테이너
-        2. 반복자(Iterator)
-        3. 알고리즘
-    2. aa
-        1. 연속(Sequence) 컨테이너
-        2. 연관(Associate) 컨테이너
+	1. 컨테이너 / 반복자(Iterator) / 알고리즘 <br>
+    2. 연속(Sequence) 컨테이너 / 연관(Associate) 컨테이너 <br>
 </details>
 
 
