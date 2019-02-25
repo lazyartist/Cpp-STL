@@ -249,7 +249,7 @@ int main() {
 		cout << "--- stack" << endl;
 		{
 			/*
-			stack 컨테이너
+			stack 컨테이너 어댑터
 				일반 컨테이너를 LIFO(Last-In First-Out) 방식의 스택(Stack) 컨테이너로 변환
 				empty(), size(), push_back, pop_back, back 인터페이스를 지원하는 컨테이너는 
 				stack 컨테이너 어댑터를 사용하여 LIFO 방식의 스택으로 변환 가능하다.
