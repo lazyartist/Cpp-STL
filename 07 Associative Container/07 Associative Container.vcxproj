@@ -123,6 +123,8 @@
   <ItemGroup>
     <ClCompile Include="0701 set.cpp" />
     <ClCompile Include="0702 multiset.cpp" />
+    <ClCompile Include="0703 map.cpp" />
+    <ClCompile Include="0704 multimap.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

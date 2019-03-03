@@ -23,3 +23,11 @@ void printContainer(T& v) {
 		cout << *iter << endl;
 	}
 }
+
+template<typename T, typename IterT>
+void printMap(T& v) {
+	for (IterT iter = v.begin(); iter != v.end(); ++iter)
+	{
+		cout << iter->first << ": " << iter->second << endl;
+	}
+}
