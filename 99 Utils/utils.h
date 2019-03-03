@@ -7,6 +7,8 @@ using namespace std;
 #define INIT_012 {0, 1, 2}
 #define INIT_01234 {0, 1, 2, 3, 4}
 
+#define INIT_0112 {0, 1, 1, 2}
+
 #define INIT_210 {2, 1, 0}
 #define INIT_43210 {4, 3, 2, 1, 0}
 

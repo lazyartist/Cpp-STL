@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06 Sequence Container", "06
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07 Associative Container", "07 Associative Container\07 Associative Container.vcxproj", "{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08 Algorithms", "08 Algorithms\08 Algorithms.vcxproj", "{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Release|x64.Build.0 = Release|x64
 		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Release|x86.ActiveCfg = Release|Win32
 		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Release|x86.Build.0 = Release|Win32
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Debug|x64.ActiveCfg = Debug|x64
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Debug|x64.Build.0 = Debug|x64
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Debug|x86.ActiveCfg = Debug|Win32
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Debug|x86.Build.0 = Debug|Win32
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Release|x64.ActiveCfg = Release|x64
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Release|x64.Build.0 = Release|x64
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Release|x86.ActiveCfg = Release|Win32
+		{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

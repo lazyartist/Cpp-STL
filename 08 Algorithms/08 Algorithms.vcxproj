@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}</ProjectGuid>
-    <RootNamespace>My07AssociativeContainer</RootNamespace>
+    <ProjectGuid>{F7DC5A01-A55D-4C1C-875C-2F9FFA5F3DEF}</ProjectGuid>
+    <RootNamespace>My08Algorithms</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -121,11 +121,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="0701 set.cpp" />
-    <ClCompile Include="0702 multiset.cpp" />
-    <ClCompile Include="0703 map.cpp" />
-    <ClCompile Include="0704 multimap.cpp" />
-    <ClCompile Include="0705 Exercise.md" />
+    <ClCompile Include="0801 nonmodifying.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
