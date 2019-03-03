@@ -86,7 +86,7 @@ void _0603_list() {
 		cout << "--- 모든 원소를 다른 list에 잘라 붙이기" << endl;
 		{
 			list<int> l1 = INIT_012;
-			list<int> l2 = INIT_012x10;
+			list<int> l2 = INIT_102030;
 
 			/*
 			splice : [splaɪs]
@@ -99,7 +99,7 @@ void _0603_list() {
 			list<int>::iterator iter1 = l1.begin();
 			l1.splice(++iter1, l2); // 반복자 앞에 붙여 넣는다.
 
-			printContainer<list<int>, list<int>::iterator>(l1); // 0, [10, 11, 12], 1, 2
+			printContainer<list<int>, list<int>::iterator>(l1); // 0, [10, 20, 30], 1, 2
 			cout << (*iter1) << endl; // 1
 			cout << "~~~" << endl;
 			printContainer<list<int>, list<int>::iterator>(l2); // (없음)
@@ -108,31 +108,31 @@ void _0603_list() {
 		cout << "--- 하나의 원소만 다른 list에 잘라 붙이기" << endl;
 		{
 			list<int> l1 = INIT_012;
-			list<int> l2 = INIT_012x10;
+			list<int> l2 = INIT_102030;
 
 			list<int>::iterator iter1 = l1.begin();
 			list<int>::iterator iter2 = l2.begin();
 			l1.splice(++iter1, l2, ++iter2);
 
-			printContainer<list<int>, list<int>::iterator>(l1); // 0, [11], 1, 2
+			printContainer<list<int>, list<int>::iterator>(l1); // 0, [20], 1, 2
 			cout << (*iter1) << endl; // 1
 			cout << "~~~" << endl;
-			printContainer<list<int>, list<int>::iterator>(l2); // 10, 12
+			printContainer<list<int>, list<int>::iterator>(l2); // 10, 30
 		}
 
 		cout << "--- 순차열을 다른 list에 잘라 붙이기" << endl;
 		{
 			list<int> l1 = INIT_012;
-			list<int> l2 = INIT_012x10;
+			list<int> l2 = INIT_102030;
 
 			list<int>::iterator iter1 = l1.begin();
 			list<int>::iterator iter2 = l2.begin();
 			l1.splice(++iter1, l2, iter2, --l2.end());
 
-			printContainer<list<int>, list<int>::iterator>(l1); // 0, [10, 10], 1, 2
+			printContainer<list<int>, list<int>::iterator>(l1); // 0, [10, 20], 1, 2
 			cout << (*iter1) << endl; // 1
 			cout << "~~~" << endl;
-			printContainer<list<int>, list<int>::iterator>(l2); // 12
+			printContainer<list<int>, list<int>::iterator>(l2); // 30
 		}
 	}
 
@@ -202,16 +202,16 @@ void _0603_list() {
 			같은 방식으로 정렬된 리스트를 정렬하며 병합한다.
 			조건자를 지정할 수 있지만 역시 정렬방식과 같은 방식의 조건자를 지정해야한다.
 			*/
-			list<int> l1 = INIT_012x10; // 10, 11, 12
+			list<int> l1 = INIT_102030; // 10, 20, 30
 			list<int> l2 = INIT_012; // 0, 1, 2
 
 //			l1.merge(l2, greater<int>()); // 오름차준으로 정렬된 리스트에 내림차준 조건자 전달시 에러. "sequence not ordered"
 			l1.merge(l2, less<int>()); // less는 기본 조건자
 
-			printContainer<list<int>, list<int>::iterator>(l1); // 0, 1, 2, 10, 11, 12
+			printContainer<list<int>, list<int>::iterator>(l1); // 0, 1, 2, 10, 20, 30
 			printContainer<list<int>, list<int>::iterator>(l2); // (없다)
 
-			list<int> l3 = INIT_012_R; // 2, 1, 0
+			list<int> l3 = INIT_210; // 2, 1, 0
 //			l1.merge(l3); // l3이 오름차순 정렬이 아니므로 런타임 에러. "sequence not ordered"
 		}
 	}

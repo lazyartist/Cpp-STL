@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "99 Utils", "99 Utils\99 Uti
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06 Sequence Container", "06 Sequence Container\06 Sequence Container.vcxproj", "{627834DC-9251-43BD-8AD6-28AA948636EC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07 Associative Container", "07 Associative Container\07 Associative Container.vcxproj", "{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{627834DC-9251-43BD-8AD6-28AA948636EC}.Release|x64.Build.0 = Release|x64
 		{627834DC-9251-43BD-8AD6-28AA948636EC}.Release|x86.ActiveCfg = Release|Win32
 		{627834DC-9251-43BD-8AD6-28AA948636EC}.Release|x86.Build.0 = Release|Win32
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Debug|x64.ActiveCfg = Debug|x64
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Debug|x64.Build.0 = Debug|x64
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Debug|x86.ActiveCfg = Debug|Win32
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Debug|x86.Build.0 = Debug|Win32
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Release|x64.ActiveCfg = Release|x64
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Release|x64.Build.0 = Release|x64
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Release|x86.ActiveCfg = Release|Win32
+		{22FB7060-AC48-4FE0-A429-10A97B1D8B2A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
