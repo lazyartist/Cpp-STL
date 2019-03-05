@@ -124,6 +124,7 @@
     <ClCompile Include="0801 nonmodifying.cpp" />
     <ClCompile Include="0802 modifying.cpp" />
     <ClCompile Include="0803 removing.cpp" />
+    <ClCompile Include="0804 mutating.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
