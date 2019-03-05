@@ -6,13 +6,8 @@ Main
 using namespace std;
 
 int main() {
-	cout << "=====  =====" << endl;
-	{
-		cout << "--- " << endl;
-		{
 
-		}
-	}
+	
 
 	return 0;
 }
@@ -29,9 +24,9 @@ Function
 using namespace std;
 
 void main() {
-	cout << "=====  =====" << endl;
+	printBlockName("");
 	{
-		cout << "--- " << endl;
+		printSubBlockName("");
 		{
 
 		}

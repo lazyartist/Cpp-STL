@@ -21,5 +21,11 @@
     <ClCompile Include="0801 nonmodifying.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="0802 modifying.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0803 removing.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
