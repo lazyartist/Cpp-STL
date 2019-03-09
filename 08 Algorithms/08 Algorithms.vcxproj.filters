@@ -30,5 +30,14 @@
     <ClCompile Include="0804 mutating.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="0805 sorting.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0806 sorted-range.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="0807 numeric.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -7,6 +7,7 @@ using namespace std;
 
 /*
 mutaing algorithm
+	변경 알고리즘
 	순차열의 원소를 서로 교환하거나 이동하여 순차열 원소의 순서를 변경하는 알고리즘
 
 	mutate[mjúːteit]

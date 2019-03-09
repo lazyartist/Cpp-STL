@@ -125,7 +125,10 @@
     <ClCompile Include="0802 modifying.cpp" />
     <ClCompile Include="0803 removing.cpp" />
     <ClCompile Include="0804 mutating.cpp" />
+    <ClCompile Include="0805 sorting.cpp" />
+    <ClCompile Include="0807 numeric.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="0806 sorted-range.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
