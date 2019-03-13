@@ -15,13 +15,13 @@
 <summary>정답< / summary>
 <ol>
 <li>
-    <ul>
+    <ol>
         <li>어댑터</li>
         <li>컨테이너 어댑터</li>
-    </ul>
+    </ol>
+</li>
 <li>
-<li>
-    <ul>
+    <ol>
         <li>push</li>
         <li>top</li>
         <li>pop</li>
@@ -29,6 +29,7 @@
         <li>front, back</li>
         <li>pop</li>
         <li>임의 접근</li>
-    </ul>
+    </ol>
+</li>
 </ol>
 </details>
