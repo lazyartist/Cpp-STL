@@ -22,4 +22,7 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="1102 Exercise.md" />
+  </ItemGroup>
 </Project>
