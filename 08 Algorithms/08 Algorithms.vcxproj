@@ -127,6 +127,7 @@
     <ClCompile Include="0804 mutating.cpp" />
     <ClCompile Include="0805 sorting.cpp" />
     <ClCompile Include="0807 numeric.cpp" />
+    <ClCompile Include="0808 Exercise.md" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="0806 sorted-range.cpp" />
   </ItemGroup>

@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include <list>
 
 using namespace std;
 
@@ -20,10 +21,15 @@ using namespace std;
 #define INIT_302010 {30, 20, 10}
 #define INIT_5040302010 {50, 40, 30, 20, 10}
 
+#define SAFE_DELETE(p) if(p) delete p;
+#define SAFE_ARRAY_DELETE (p) if(p) delete[] p;
+
 
 // ===== typedef ===== //
 typedef vector<int> vint;
 typedef vector<int>::iterator vinti;
+typedef list<int> lint;
+typedef list<int>::iterator linti;
 
 
 // ===== ÇÔ¼ö ÅÛÇÃ¸´ ===== //
@@ -55,6 +61,10 @@ void printContainer(T& v, char ch = '\n') {
 
 inline void printVector(vector<int>& v) {
 	printContainer<vector<int>, vector<int>::iterator>(v, ',');
+}
+
+inline void printList(list<int>& v) {
+	printContainer<list<int>, list<int>::iterator>(v, ',');
 }
 
 template<typename T, typename IterT>

@@ -39,5 +39,8 @@
     <ClCompile Include="0807 numeric.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="0808 Exercise.md">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
